@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My COINS</title>
+  <title>COINS FILE</title>
+  <link rel="stylesheet" type="coins/css" href="styles.css">
 </head>
 <body>
-
+  <form>
+    <h3>Currency - USD</h3>
+      <input pattern="\d?\d\.\d\d" maxlength=5 size=5 onchange="check(this)" id="input">
+      <button type="button" id="money">Submit</button>
+      <div id="answer"></div>
+  </form>
+  <script src="/coins.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
+
